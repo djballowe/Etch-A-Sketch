@@ -56,8 +56,9 @@ h3 {
     background-color: white;
     height: 35rem;
     width: 55rem;
-    border-radius: 10px;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -71,7 +72,7 @@ h3 {
 
 .canvas {
     color: var(--secondary-color);
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: .5rem;
 }
 
@@ -81,7 +82,7 @@ h3 {
 
 button {
     font-size: 1.5em;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
     margin: 0 1rem;
     color: var(--secondary-color);
     border: 1px solid;
@@ -91,5 +92,11 @@ button {
 
 button:hover {
     background: var(--sketch-color);
+}
+
+.draw {
+    border: 1px solid grey;
+    width: 1.911rem;
+    height: 1.911rem;
 }
 
