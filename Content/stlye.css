@@ -1,0 +1,49 @@
+:root {
+    --sketch-color: #f53652;
+    --background-color: #b0f5eb;
+    --secondary-color: #f8fa98;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+.wrapper-whole {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sketchBorder {
+    background-color: var(--sketch-color);
+    height: 50rem;
+    width: 70rem;
+    margin: 4rem 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.theSketchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    width: 70rem;
+    position: absolute;
+}
+
+.theSketch {
+    background-color: white;
+    height: 20rem;
+    width: 40rem;
+
+}
+
