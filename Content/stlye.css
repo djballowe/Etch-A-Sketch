@@ -3,7 +3,6 @@
     --background-color: #b0f5eb;
     --secondary-color: #f8fa98;
     --third-color: #eb7384;
-
 }
 
 html {
@@ -57,7 +56,15 @@ h3 {
     height: 35rem;
     width: 55rem;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+   
+    
+}
 
+.draw {
+    border: solid .7px grey;
+    padding: .5rem;
 }
 
 .grid-container {
