@@ -57,9 +57,19 @@ h3 {
     height: 35rem;
     width: 55rem;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
 
+}
+
+.grid-container {
+    display: grid;
+    max-height: 35rem;
+    max-width: 55rem;
+    border: .7px solid grey;
+    grid-template-columns: repeat(auto-fill, 100px);
+}
+
+.draw {
+    
 }
 
 .controls {
@@ -93,10 +103,3 @@ button {
 button:hover {
     background: var(--sketch-color);
 }
-
-.draw {
-    border: 1px solid grey;
-    width: 1.911rem;
-    height: 1.911rem;
-}
-
