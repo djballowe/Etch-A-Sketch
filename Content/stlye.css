@@ -57,25 +57,13 @@ h3 {
     width: 55rem;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(1rem, 1fr));
    
     
 }
 
 .draw {
     border: solid .7px grey;
-    padding: .5rem;
-}
-
-.grid-container {
-    display: grid;
-    max-height: 35rem;
-    max-width: 55rem;
-    border: .7px solid grey;
-    grid-template-columns: repeat(auto-fill, 100px);
-}
-
-.draw {
     
 }
 
