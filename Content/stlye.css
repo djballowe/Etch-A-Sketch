@@ -54,15 +54,17 @@ h3 {
 .theSketch {
     background-color: white;
     height: 500px;
-    width: 500px;
+    width: 800px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill,  1fr);
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+   
     
 }
 
 .draw {
     border: solid .7px grey;
+    padding: .5rem;
 }
 
 .controls {
