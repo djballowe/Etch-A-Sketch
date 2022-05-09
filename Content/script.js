@@ -1,14 +1,27 @@
 const buttons = document.querySelectorAll('button');
 const grid = document.querySelector('.theSketch');
 
+
+
 function theSketch(size) {
+
     if (size === 'small') {
-        grid.classList.add('.theSketch');
+        for(let i = 0; i < 100; i++) {
+            const cell = document.createElement('div');
+            cell.className = 'draw';
+            grid.appendChild(cell);
+        }
+
     } else if (size === 'medium') {
         grid.classList.add('.theSketchMedium');
-        console.log('medium')
+        for(let i = 0; i < 256; i++) {
+            const cell = document.createElement('div');
+            cell.className = 'draw';
+            grid.appendChild(cell);
+        }
     } else if (size === 'large') {
         grid.classList.add('theSketchLarge');
+        console.log('large');
     }
 }
 
