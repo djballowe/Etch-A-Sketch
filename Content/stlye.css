@@ -56,13 +56,19 @@ h3 {
     background-color: white;
     height: 35rem;
     width: 55rem;
-    border-radius: 10px;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
 
 }
 
 .draw {
-    
+    border: solid .7px grey;
+    height: 1.996rem;
+    width: 1.996rem;
 }
 
 .controls {
