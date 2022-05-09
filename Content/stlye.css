@@ -57,14 +57,37 @@ h3 {
     width: 35rem;
     margin: auto;
     display: inline-grid;
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(4, 2fr);
+    grid-template-columns: repeat(10, 2fr);
+    grid-template-rows: repeat(10, 2fr);
     
 }
 
+.theSketchMedium {
+    background-color: white;
+    height: 35rem;
+    width: 35rem;
+    margin: auto;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    
+}
+
+.theSketchLarge {
+    background-color: white;
+    height: 35rem;
+    width: 35rem;
+    margin: auto;
+    display: inline-grid;
+    grid-template-columns: repeat(20, 2fr);
+    grid-template-rows: repeat(20, 2fr);
+    
+}
+
+
+
 .draw {
     border: solid .7px grey;
-    
 }
 
 .controls {
