@@ -6,6 +6,7 @@ function theSketch(size) {
         grid.classList.add('.theSketch');
     } else if (size === 'medium') {
         grid.classList.add('.theSketchMedium');
+        console.log('medium')
     } else if (size === 'large') {
         grid.classList.add('theSketchLarge');
     }
@@ -14,6 +15,6 @@ function theSketch(size) {
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
         theSketch(button.id);
-        console.log('test');
+        console.log(button.id);
     });
 });
