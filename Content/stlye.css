@@ -57,12 +57,12 @@ h3 {
     width: 500px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill,  1fr);
+    
 }
 
 .draw {
     border: solid .7px grey;
-    padding: 1em;
 }
 
 .controls {
