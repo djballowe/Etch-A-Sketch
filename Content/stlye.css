@@ -54,11 +54,11 @@ h3 {
 .theSketch {
     background-color: white;
     height: 35rem;
-    width: 55rem;
+    width: 35rem;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1rem, 1fr));
-   
+    display: inline-grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(4, 2fr);
     
 }
 
