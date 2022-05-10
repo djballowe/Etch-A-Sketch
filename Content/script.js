@@ -27,7 +27,6 @@ function theSketch(size) {
             cell.className = 'draw';
             grid.appendChild(cell);
         }
-        console.log(grid.classList);
         
     } else if (size === 'large') {
         clearCanvas()
@@ -52,9 +51,6 @@ function clearCanvas() {
         }
     }
 }
-
-
-
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {

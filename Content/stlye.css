@@ -85,6 +85,10 @@ h3 {
     border: solid .7px grey;
 }
 
+.draw:hover {
+    background-color: black;
+}
+
 .controls {
     display: flex;
     flex-direction: column;
