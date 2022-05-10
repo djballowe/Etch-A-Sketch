@@ -1,7 +1,7 @@
 const buttons = document.querySelectorAll('button');
 const grid = document.querySelector('#theSketch');
 const cell = document.createElement('div');
-
+const div = document.querySelector('.draw');
 
 
 function theSketch(size) {
@@ -57,3 +57,9 @@ buttons.forEach((button) => {
         theSketch(button.id);
     });
 });
+
+
+div.addEventListener('mouseover', function (event) {
+    event.target.style.color = 'grey'
+});
+

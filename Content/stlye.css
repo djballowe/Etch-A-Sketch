@@ -85,8 +85,8 @@ h3 {
     border: solid .7px grey;
 }
 
-.draw:hover {
-    background-color: black;
+.drawHover {
+    background-color: grey;
 }
 
 .controls {
