@@ -1,2 +1,2 @@
 # Etch-A-Sketch
-Small project for practicing DOM manipulation.
+Small project creating an Etch-A-Sketch for practicing DOM manipulation.
