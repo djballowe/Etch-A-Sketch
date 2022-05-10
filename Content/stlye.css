@@ -120,3 +120,11 @@ button {
 button:hover {
     background: var(--sketch-color);
 }
+
+#erase {
+    background-color: var(--secondary-color);
+    color: black;
+    position: absolute;
+    right: 3rem;
+
+}

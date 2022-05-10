@@ -75,9 +75,8 @@ function hover() {
     document.querySelectorAll('.draw').forEach(item => {
         item.addEventListener('mouseover', () => {
             item.style.backgroundColor = 'grey';
-            console.log('this is retarded');
-        })
-    })
+        });
+    });
 }
 
 onStart();
