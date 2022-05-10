@@ -18,7 +18,7 @@ function theSketch(size) {
         }
 
     } else if (size === 'medium') {
-        clearCanvasMedium()
+        clearCanvas()
         grid.classList.add('theSketchMedium');
         grid.classList.remove('theSketch');
         grid.classList.remove('theSketchLarge')
@@ -30,7 +30,7 @@ function theSketch(size) {
         console.log(grid.classList);
         
     } else if (size === 'large') {
-        clearCanvasLarge()
+        clearCanvas()
         grid.classList.add('theSketchLarge');
         grid.classList.remove('theSketch');
         grid.classList.remove('theSketchMedium')
@@ -43,7 +43,8 @@ function theSketch(size) {
 }
 
 function clearCanvas() {
-    for (let i = 0; i < 100; i++) {
+    let num = document.getElementById('theSketch').childElementCount;
+    for (let i = 0; i < num; i++) {
         let child = grid.lastElementChild;
         while (child) {
             grid.removeChild(child);
@@ -52,30 +53,11 @@ function clearCanvas() {
     }
 }
 
-function clearCanvasMedium() {
-    for (let i = 0; i < 256; i++) {
-        let child = grid.lastElementChild;
-        while (child) {
-            grid.removeChild(child);
-            child = grid.lastElementChild;
-        }
-    }
-}
 
-function clearCanvasLarge() {
-    for (let i = 0; i < 400; i++) {
-        let child = grid.lastElementChild;
-        while (child) {
-            grid.removeChild(child);
-            child = grid.lastElementChild;
-        }
-    }
-}
 
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
         theSketch(button.id);
-        console.log(button.id);
     });
 });
