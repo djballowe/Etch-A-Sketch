@@ -2,6 +2,17 @@ const buttons = document.querySelectorAll('button');
 const grid = document.querySelector('#theSketch');
 const cell = document.createElement('div');
 
+function onStart() {
+    grid.classList.add('theSketch');
+    for(let i = 0; i < 100; i++) {
+        const cell = document.createElement('div');
+        cell.className = 'draw';
+        grid.appendChild(cell);
+    }
+    hover()
+}
+
+
 function theSketch(size) {
 
     if (size === 'small') {
@@ -36,7 +47,9 @@ function theSketch(size) {
             cell.className = 'draw';
             grid.appendChild(cell);
         }
+        
     }
+    hover()
 }
 
 function clearCanvas() {
@@ -58,12 +71,16 @@ function ButtonFunction() {
     });
 }
 
-document.querySelectorAll('.draw').forEach(item => {
-    item.addEventListener('mouseover', () => {
-        item.style.backgroundColor = 'grey';
-        console.log('this is retarded');
+function hover() {
+    document.querySelectorAll('.draw').forEach(item => {
+        item.addEventListener('mouseover', () => {
+            item.style.backgroundColor = 'grey';
+            console.log('this is retarded');
+        })
     })
-})
+}
+
+onStart();
 
 
 
