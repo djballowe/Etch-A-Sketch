@@ -79,6 +79,13 @@ function hover() {
     });
 }
 
+function erase() {
+    document.querySelectorAll('.draw').forEach(item => {
+        item.style.backgroundColor = 'white';
+    });
+    console.log('erase');
+}
+
 onStart();
 
 
