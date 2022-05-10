@@ -1,7 +1,16 @@
 const buttons = document.querySelectorAll('button');
 const grid = document.querySelector('#theSketch');
 const cell = document.createElement('div');
-const div = document.querySelector('.draw');
+
+
+
+document.querySelectorAll('.draw').forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.style.backgroundColor = 'grey';
+        console.log('hover');
+    })
+})
+
 
 
 function theSketch(size) {
@@ -51,15 +60,12 @@ function clearCanvas() {
         }
     }
 }
-
+/*
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
         theSketch(button.id);
     });
 });
+*/
 
-
-div.addEventListener('mouseover', function (event) {
-    event.target.style.color = 'grey'
-});
 
