@@ -7,6 +7,8 @@ function theSketch(size) {
 
     if (size === 'small') {
         grid.classList.add('theSketch');
+        grid.classList.remove('theSketchLarge');
+        grid.classList.remove('theSketchMedium')
         for(let i = 0; i < 100; i++) {
             const cell = document.createElement('div');
             cell.className = 'draw';
@@ -15,6 +17,8 @@ function theSketch(size) {
 
     } else if (size === 'medium') {
         grid.classList.add('theSketchMedium');
+        grid.classList.remove('theSketch');
+        grid.classList.remove('theSketchLarge')
         for(let i = 0; i < 256; i++) {
             const cell = document.createElement('div');
             cell.className = 'draw';
@@ -24,6 +28,8 @@ function theSketch(size) {
         
     } else if (size === 'large') {
         grid.classList.add('theSketchLarge');
+        grid.classList.remove('theSketch');
+        grid.classList.remove('theSketchMedium')
         for(let i = 0; i < 400; i++) {
             const cell = document.createElement('div');
             cell.className = 'draw';
