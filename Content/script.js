@@ -6,8 +6,8 @@ const grid = document.querySelector('#theSketch');
 function theSketch(size) {
 
     if (size === 'small') {
+        grid.classList.add('theSketch');
         for(let i = 0; i < 100; i++) {
-            grid.classList.add('theSketch');
             const cell = document.createElement('div');
             cell.className = 'draw';
             grid.appendChild(cell);
@@ -23,8 +23,8 @@ function theSketch(size) {
         console.log(grid.classList);
         
     } else if (size === 'large') {
+        grid.classList.add('theSketchLarge');
         for(let i = 0; i < 400; i++) {
-            grid.classList.add('theSketchLarge');
             const cell = document.createElement('div');
             cell.className = 'draw';
             grid.appendChild(cell);

@@ -55,8 +55,7 @@ h3 {
     background-color: white;
     height: 35rem;
     width: 35rem;
-
-    
+    margin: auto;
 }
 
 .theSketch {
@@ -81,8 +80,6 @@ h3 {
     grid-template-rows: repeat(20, 2fr);
     
 }
-
-
 
 .draw {
     border: solid .7px grey;
