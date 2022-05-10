@@ -1,11 +1,13 @@
 const buttons = document.querySelectorAll('button');
 const grid = document.querySelector('#theSketch');
+const cell = document.createElement('div');
 
 
 
 function theSketch(size) {
 
     if (size === 'small') {
+        clearCanvas();
         grid.classList.add('theSketch');
         grid.classList.remove('theSketchLarge');
         grid.classList.remove('theSketchMedium')
@@ -37,6 +39,15 @@ function theSketch(size) {
         }
     }
 }
+
+function clearCanvas() {
+    for (let i = 0; i < 100; i++) {
+        const div = document.getElementsByClassName('draw');
+        div.remove();
+    }
+    console.log('remove');
+}
+
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
