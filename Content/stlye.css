@@ -61,23 +61,23 @@ h3 {
 .theSketch {
     margin: auto;
     display: inline-grid;
-    grid-template-columns: repeat(10, 2fr);
-    grid-template-rows: repeat(10, 2fr);
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
 }
 
 .theSketchMedium {
     margin: auto;
     display: inline-grid;
-    grid-template-columns: repeat(16, 2fr);
-    grid-template-rows: repeat(16, 2fr);
+    grid-template-columns: repeat(20, 2fr);
+    grid-template-rows: repeat(20, 2fr);
     
 }
 
 .theSketchLarge {
     margin: auto;
     display: inline-grid;
-    grid-template-columns: repeat(20, 2fr);
-    grid-template-rows: repeat(20, 2fr);
+    grid-template-columns: repeat(50, 2fr);
+    grid-template-rows: repeat(50, 2fr);
     
 }
 
@@ -124,7 +124,4 @@ button:hover {
 #erase {
     background-color: var(--secondary-color);
     color: black;
-    position: absolute;
-    right: 3rem;
-
 }

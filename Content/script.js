@@ -4,7 +4,7 @@ const cell = document.createElement('div');
 
 function onStart() {
     grid.classList.add('theSketch');
-    for(let i = 0; i < 100; i++) {
+    for(let i = 0; i < 256; i++) {
         const cell = document.createElement('div');
         cell.className = 'draw';
         grid.appendChild(cell);
@@ -20,7 +20,7 @@ function theSketch(size) {
         grid.classList.add('theSketch');
         grid.classList.remove('theSketchLarge');
         grid.classList.remove('theSketchMedium')
-        for(let i = 0; i < 100; i++) {
+        for(let i = 0; i < 256; i++) {
             const cell = document.createElement('div');
             cell.className = 'draw';
             grid.appendChild(cell);
@@ -31,7 +31,7 @@ function theSketch(size) {
         grid.classList.add('theSketchMedium');
         grid.classList.remove('theSketch');
         grid.classList.remove('theSketchLarge')
-        for(let i = 0; i < 256; i++) {
+        for(let i = 0; i < 400; i++) {
             const cell = document.createElement('div');
             cell.className = 'draw';
             grid.appendChild(cell);
@@ -42,7 +42,7 @@ function theSketch(size) {
         grid.classList.add('theSketchLarge');
         grid.classList.remove('theSketch');
         grid.classList.remove('theSketchMedium')
-        for(let i = 0; i < 400; i++) {
+        for(let i = 0; i < 2500; i++) {
             const cell = document.createElement('div');
             cell.className = 'draw';
             grid.appendChild(cell);
