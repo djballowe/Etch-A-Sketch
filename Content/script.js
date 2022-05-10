@@ -18,6 +18,7 @@ function theSketch(size) {
         }
 
     } else if (size === 'medium') {
+        clearCanvasMedium()
         grid.classList.add('theSketchMedium');
         grid.classList.remove('theSketch');
         grid.classList.remove('theSketchLarge')
@@ -29,6 +30,7 @@ function theSketch(size) {
         console.log(grid.classList);
         
     } else if (size === 'large') {
+        clearCanvasLarge()
         grid.classList.add('theSketchLarge');
         grid.classList.remove('theSketch');
         grid.classList.remove('theSketchMedium')
@@ -42,10 +44,32 @@ function theSketch(size) {
 
 function clearCanvas() {
     for (let i = 0; i < 100; i++) {
-        const div = document.getElementsByClassName('draw');
-        div.remove();
+        let child = grid.lastElementChild;
+        while (child) {
+            grid.removeChild(child);
+            child = grid.lastElementChild;
+        }
     }
-    console.log('remove');
+}
+
+function clearCanvasMedium() {
+    for (let i = 0; i < 256; i++) {
+        let child = grid.lastElementChild;
+        while (child) {
+            grid.removeChild(child);
+            child = grid.lastElementChild;
+        }
+    }
+}
+
+function clearCanvasLarge() {
+    for (let i = 0; i < 400; i++) {
+        let child = grid.lastElementChild;
+        while (child) {
+            grid.removeChild(child);
+            child = grid.lastElementChild;
+        }
+    }
 }
 
 
